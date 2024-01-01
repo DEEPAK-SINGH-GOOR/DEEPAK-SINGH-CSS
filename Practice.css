@@ -1,0 +1,22 @@
+
+#text1
+{
+    background-color: rgb(0, 45, 129);
+    color: rgb(255, 255, 255); 
+    padding-top: 20px;
+    
+}
+
+body
+{
+    background-color:rgb(255, 255, 255) ;
+    border: 30px;
+    border-color: black;
+    border: solid rgb(0, 0, 0) 3px;
+    border-radius: 7px;
+    padding: 9px;
+    border: 7px; dashed;
+    border-style: double;  
+    border:solid 7px;   
+    border-style:double;
+}
