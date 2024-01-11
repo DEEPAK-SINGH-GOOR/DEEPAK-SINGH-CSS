@@ -1,0 +1,115 @@
+#box1 {
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    background-color: rgb(204, 204, 204);
+    height: 350px;
+    width: 1300px;
+    display: flex;
+    box-shadow: 15px 15px 20px #4d4d4d;
+    
+}
+#box2
+{
+    height: 300px;
+    width: 300px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px #888888;
+    margin: 25px;
+   
+}
+#box3
+{
+    height: 300px;
+    width: 300px;
+    color: black;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px #888888;
+    margin: 25px;
+}
+
+#box4
+{
+    height: 300px;
+    width: 300px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px #888888;
+    margin: 25px;
+}
+
+#box5
+{
+    height: 300px;
+    width: 300px;
+    color: black;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px #888888;
+    margin: 25px;
+}
+#s1
+{
+    padding-bottom: 50px;
+}
+#text1
+{
+    padding-left: 110px;
+    color:rgb(255, 0, 0) ;
+    font-size: 20px;
+    margin-top: -30px;
+
+}
+
+#text2
+{
+    padding-bottom: 100px;
+    padding-left: 110px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#h1
+{
+    padding-left: 50px;
+}
+#cart
+{
+    padding-left: 199px;
+}
+#s1
+{
+        padding-top: 5px;
+        padding-left: 10px;
+}
+#shoes
+{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#shoes3
+{
+    padding-left: 35px;
+    padding-top: 5px;
+}
+#shoes4
+{
+    padding-left: 40px;
+    padding-top: 5px;
+}
+#cart3
+{
+    padding-left: 199px;
+}
+#cart4
+{
+    padding-left: 230px;
+    margin-top: -40;
+}
