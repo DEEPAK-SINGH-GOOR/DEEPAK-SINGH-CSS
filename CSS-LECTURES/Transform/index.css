@@ -1,0 +1,29 @@
+#main
+{
+    background: #f8f8f8;
+    display: flex;
+}
+#sub1
+{
+    height: 100px;
+    width: 100px;
+    background: #ff0000;
+}
+#sub2
+{
+    height: 100px;
+    width: 100px;
+    background: #0066ff;
+}
+#sub3
+{
+    height: 100px;
+    width: 100px;
+    background: #b40000;
+}
+#sub4
+{
+    height: 100px;
+    width: 100px;
+    background: #0a0000;
+}
