@@ -58,14 +58,16 @@
 }
 
 #box2:hover {
-    transform: rotate(365deg);
+    transform: rotate(720deg);
     transition: 0.7s;
 }
 #box4:hover {
-    transform: skew(20deg, 8deg);
+    transform: skew(20deg, 20deg );
     transition: 0.7s;
 }
-p {
+
+p 
+{
     padding-top: 25px;
     text-align: center;
 }

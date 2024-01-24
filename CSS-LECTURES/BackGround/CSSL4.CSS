@@ -14,6 +14,7 @@
     padding: 50px;
     padding-top: 1px;
     margin-right: 120px;
+    
 }
                   
 #d2
@@ -57,12 +58,13 @@
 }
 #css
 {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 #java
 {
     color: aliceblue;
+    text-decoration: underline;
 }
 #html
 {
@@ -82,28 +84,33 @@ body{
     padding-top: 10px;
     padding-right:  1400px;
 }
-#h2
-{
-    color: azure;
-    
-    padding-top: 0px;
-    padding-bottom: 90px;
-    padding-bottom: 1000px;
-    text-decoration: underline;
-}
-#h1
-{
-    color: azure;
-    padding-bottom: 1000px;
-    text-decoration: underline;
-}
 #j
 {
     padding-right:  1400px;
     padding-bottom: 00px;
 
 }
-#java
+#cs
 {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    margin-left: 750px;
+    margin-top: -100px;
+    margin-bottom: -200px;
+}
+#ja
+{
+    color: rgb(0, 0, 0);
+    margin-left: 750px;
+    margin-top: -100px;
     text-decoration: underline;
 }
+#ht
+{
+    color: rgb(0, 0, 0);
+    margin-left: 750px;
+    margin-top: -100px;
+    text-decoration: underline;
+}
+
+

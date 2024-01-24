@@ -1,0 +1,22 @@
+#parent
+{
+    height: 500px;
+    width: 500px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr  1fr   ;
+    grid-template-rows: 1fr  1fr ;
+    row-gap:12px ;
+    column-gap: 12px;
+   
+}
+.child
+{
+    background: #0088ff;
+}
+.child1
+{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  
+}
