@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="pp">
+        <button id="btn1">
+           <h3> Dark / light</h3>
+        </button>
+    </div>
+    <div id="Parent">
+        <h1>To-Do list</h1>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Add New Task">
+    </form>
+    <br><br>
+    <div id="add">
+        <button id="gr">
+            <h2>Add Task</h2>
+        </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- functions     -->
+   
+        <!-- // $("button").dblclick(()=>{
+        //     $("body").css("background-color","#000");
+        //     $("h1").css("color","white");
+        // })
+        // $("button").click(()=>{
+        //     $("body").css("background-color","#fff");
+        //     $("h1").css("color","#000");
+        // }) -->
+    <script>    
+    
+    $('#pp').click(function() {
+        $('body').toggleClass('dark-mode');
+    });
+    </script>
+</body>
+
+</html>

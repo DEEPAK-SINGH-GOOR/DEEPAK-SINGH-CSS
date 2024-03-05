@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box1">
+        <img id="image" src="https://dlcdnwebimgs.asus.com/gain/5cd95cf4-afde-4319-9d83-d95a6fbaec3f/" alt=""
+            height="330px" width="330px">
+        <button id="btn1">Click to Change </button>
+      
+        <!-- Button CSS for scaling  -->
+    </div>
+    <style>
+        #btn1{
+            margin-left: 110px;
+            margin-top: -200px;
+        }
+        
+        #btn1:hover {
+            transform: scale(1.1);
+            color: #ddd;
+            background: #000;
+            cursor: pointer;
+        }
+
+        #box1 {
+            border: 2px solid black;
+            width: 350px;
+            height: 400px;
+        }
+    </style>
+</body>
+
+<!-- Script url -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+<!-- script -->
+
+<script>
+    $("#btn1").click(function () {
+        $("#image").attr("src", "https://www.asus.com/media/Odin/Websites/global/ProductLine/20200824120814.jpg");
+    });
+    $("#btn1").dblclick(function () {
+        $("#image").attr("src", "https://dlcdnwebimgs.asus.com/gain/5cd95cf4-afde-4319-9d83-d95a6fbaec3f/");
+    });
+    // To Print HTML Console
+    // $(document).ready(function(){
+    //     var a = $("#btn").html();
+    //     console.log(a);
+    // });
+    // $("#image").dblclick(function () {
+    //     dsdvcxvefdfhgfgfhgf
+    // });
+
+</script>
+
+</html>

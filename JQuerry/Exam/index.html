@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Task</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <button id="Darkmode">
+
+        Dark/Light Mode
+
+    </button>
+    <br><br><br><br>
+
+    <h1>
+        
+        To-Do List
+    
+    </h1>
+
+    <br>
+
+    <input type="text" id="task" placeholder="Add Your Task Name" />
+    <br>
+
+    <button class="taskadding">
+
+        Add Task
+
+    </button>
+    <br>
+
+    <ul id="list">
+
+
+
+    </ul>
+
+</body>
+
+
+<!------------------------------------------ JQUERY ----------------------------------------->
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script>
+
+        $(".taskadding").click(function() 
+        {
+            var taskName = $("#task").val();
+                if (taskName !== "") 
+                {
+                    $("#list").append(
+                        '<li><span class="task">' +
+                        taskName +
+                        '</span><button class="delete">Delete</button></li>'
+                    );
+                    $("#task").val("");
+                }
+        });
+
+        
+        $("#list").on("click", ".task", function() 
+        {
+
+            $(this).toggleClass("done");
+
+        });
+
+      
+        $("#list").on("click", ".delete", function() 
+        {
+
+            $(this).parent().remove();
+            
+        });
+
+      
+        $("#Darkmode").click(function() 
+        {
+
+            $("body").toggleClass("dark-mode");
+
+        });
+
+
+        $("#list").on("click", ".task", function() 
+        {
+
+            $(this).vibrate("done");
+
+        });
+
+        $('.task').on('click', function(e) 
+        {
+
+            navigator.vibrate(250);
+
+        });
+</script>
+
+</html>

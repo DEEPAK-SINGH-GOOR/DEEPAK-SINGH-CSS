@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <div id="mainDiv">
+        <div id="box1">
+            <img id="men" src="men.png" alt="">    
+        </div>
+
+        <!-- <button id="btn1">Show</button> -->
+        
+        <div id="box2">
+            <img id="girl" src="girl.png" alt="">
+        </div>
+    </div>
+        <button id="btna">Show</button>
+        <button id="btnb">Hide</button>
+        <button id="btn1">Show</button>
+        <button id="btn2">Hide</button>    
+            <style>
+                #mainDiv{
+                    display: flex;
+
+                }
+                #box1
+                {
+                    height: 600px;
+                    width: 300px;
+                    border: 3px solid black;
+                }
+                #box2
+                {
+                    height: 600px;
+                    width: 300px;
+                    border: 3px solid black;
+                }
+                body
+                {
+                    /* display: flex; */
+                    margin: 5px;
+                }
+                #men
+                {
+                    padding-left: 70px;
+                }
+                #girl
+                {
+                    margin-left: -90px;
+                }
+                /* #btn1:hover
+                {
+                    background-color: black;
+                    color: #ddd;
+                    transition: 1s;
+                } */
+                #btna
+                {
+                    margin-left: 100px;
+                    height: 50px;
+                    width: 100px;
+                }
+                #btn1
+                {
+                    height: 50px;
+                    width: 100px;
+                }
+                #btn2
+                {
+                    height: 50px;
+                    width: 100px;
+                }
+                #btna
+                {
+                    margin-left: 0px;
+                    height: 50px;
+                    width: 150px;
+                }
+                #btnb
+                {
+                    height: 50px;
+                    width: 150px;
+                }
+                #btn1
+                {
+                    height: 50px;
+                    width: 150px;
+                }
+                #btn2
+                {
+                    height: 50px;
+                    width: 150px;
+                }
+            </style>
+</body>
+
+<!-- Script url -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+<!-- script -->
+
+<script>
+            $("#btn2").click(()=>{
+                $("#girl").css("visibility","hidden")
+            })
+            $("#btn1").click(()=>{
+                $("#girl",).css("visibility","visible")
+            })
+            $("#btn2").click(()=>{
+                $("#bax2").css("visibility","hidden")
+            })
+            $("#btn1").click(()=>{
+                $("#box2",).css("visibility","visible")
+            })
+            // girl    
+           
+            $("#btnb").click(()=>{
+                $("#men",).css("visibility","hidden")
+            })
+            $("#btna").click(()=>{
+                $("#bax1").css("visibility","hidden")
+            })
+            $("#btnb").click(()=>{
+
+                $("#box1",).css("visibility","visible")
+            })
+            $("#btna").click(()=>{
+                $("#men").css("visibility","visible")
+            })
+</script>
+
+</html>

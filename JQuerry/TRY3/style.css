@@ -1,0 +1,27 @@
+
+.container3
+{
+    background: #ff0000;
+    height:auto;
+    width: 1800px;
+    display: grid;
+    justify-content: center;
+
+    grid-template-rows: 330px 330px  ;
+    grid-template-columns: 300px 300px 300px 300px;
+    row-gap: 5px;
+    column-gap:5px;
+}
+
+.item3
+{
+    background: #00e1ff;
+ 
+} 
+.item3 img {
+    max-width: 100%; /* Make the image responsive within the item */
+    max-height: 100%; /* Make the image responsive within the item */
+}
+
+
+

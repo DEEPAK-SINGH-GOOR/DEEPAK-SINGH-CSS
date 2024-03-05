@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <li>
+            <ul>
+                <div id="div1">
+                <h1 id="head">Icon</h1>
+                </div>
+
+                <div id="div2">    
+                    <a id="at" href="h">Home</a>
+                    <a id="at"  href="h">About</a>
+                    <a id="at"  href="h">Contact</a>
+                    <a id="at"  href="h">Sign-in</a>
+                    <i id="icon" class="fa-solid fa-list"></i>
+            </div>
+            </ul>
+        </li>
+    </nav>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+<script>
+     $("#icon").click(()=>{
+                $("#div2").css("visibility","visible")
+      })
+</script>    
+</html>

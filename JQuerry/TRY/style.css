@@ -1,0 +1,54 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #circle
+  {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #000;
+  }
+  #name1
+  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  #name2
+  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #6a6a6a;
+  }
+  #name3
+  {
+    font-family: 'Pacifico', cursive;
+    font-weight: 900; 
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #6a6a6a;
+    padding-top: 10px;
+    padding-left:80px;
+    background: #ffffff00;
+    width: 50px;
+  }

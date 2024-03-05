@@ -1,0 +1,92 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 80%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width:95%;
+    height: 100%;
+    object-fit: cover;
+  }
+  img{
+    height: 100px;
+  }
+
+
+  /* navbar */
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#perentDiv{
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    align-items: center;
+    height: 70px;
+}
+#logo{
+   /* height: 110px; */
+   color: white;
+   /* padding-top: 23px; */
+   display: none;
+   margin-right: 20px;
+}
+#name ul{
+    display: flex;
+    list-style: none;
+}
+#name ul li a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#name{
+   margin-left: 20px;
+}
+#imgLogo{
+    /* padding-top: 10px; */
+    margin-top: 10px;
+    font-size: 10px;
+}
+@media (max-width:768px) {
+    #logo{
+        color: white;
+        display: block;
+      
+     }
+     #name{
+        display: none;
+        /* font-size: 5px; */
+    }
+    .font{
+      font-size: 5px;
+    }
+}

@@ -1,0 +1,74 @@
+body.dark-mode
+{
+    background-color: #000000;
+    color: white;
+}
+#pp
+{
+    display: flex;
+    justify-content: end;
+}
+#pp:hover
+{
+    cursor: pointer;
+}
+h3:hover
+{
+    cursor: pointer;
+}
+#Parent
+{
+    display: flex;
+    justify-content: center;
+    
+}
+input
+{
+    font-size: 25px;
+}
+h1
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+}
+input
+{
+    height: 50px;
+    width: 900px;
+    border-radius: 5px;
+}
+#add
+{
+    
+    display: flex;
+    justify-content: center;
+}
+#add:hover
+{
+    cursor: pointer;
+}
+#gr:hover
+{
+    cursor: pointer;
+}
+#gr
+{
+    background: #00a10d;
+    border-radius: 5px;
+    border: 0px solid black;
+}
+#gr:hover
+{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+h2
+{
+    color: #ffffff;
+}

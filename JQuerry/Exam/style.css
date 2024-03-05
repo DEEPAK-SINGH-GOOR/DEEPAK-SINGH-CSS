@@ -1,0 +1,118 @@
+#Darkmode {
+  background: none;
+  border: none;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+body.dark-mode .taskadding {
+  background-color: #47d247;
+}
+
+body.dark-mode .taskadding:hover {
+  background-color: #46c54d;
+}
+
+body.dark-mode ul {
+  background-color: #292929;
+}
+
+body.dark-mode li {
+  background-color: #474646;
+  border: 1px solid #3f3f3f;
+}
+
+
+
+body.dark-mode {
+  background-color: #141414;
+  color: #fff;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+h1 {
+  margin-top: 20px;
+  color: inherit;
+  text-align: center;
+}
+
+
+ul {
+  background-color: #fff;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 70%;
+}
+
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#task {
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px auto;
+  display: block;
+}
+
+.taskadding {
+  background-color: #4caf50;
+  color: white;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.taskadding:hover {
+  background-color: #45a049;
+}
+
+.task {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #fa2819;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #dd1919;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.2;
+}

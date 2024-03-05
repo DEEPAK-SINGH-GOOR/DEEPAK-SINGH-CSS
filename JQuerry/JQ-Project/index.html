@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="https://zeevector.com/wp-content/uploads/2021/02/Titan-Logo-PNG.png"
+        alt="" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="sign.html">Sign-in</a>
+            <a class="dropdown-item" href="#">login</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">New</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- PARENT-------BOX  -->
+
+  <!-- slider-block -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img
+          src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwa7cad41a/images/homepage/Stellar_191223_D.jpg"
+          alt=""></div>
+      <div class="swiper-slide"><img
+          src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw97a3e857/images/workwear.jpg"
+          alt=""></div>
+      <div class="swiper-slide"><img
+          src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw97663c8c/images/homepage/All_Banners/Ceramic_Automatics_D_200224.jpg"
+          alt=""></div>
+      <div class="swiper-slide"><img
+          src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw6bf24990/images/homepage/RagaWatches_D.jpg"
+          alt=""></div>
+      <div class="swiper-slide"><img
+          src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwd1628230/images/Clock-Desktop.jpg"
+          alt=""></div>
+      <div class="swiper-slide"><img
+          src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwcd45b3a4/images/homepage/All_Banners/Nebula_D_310124.jpg"
+          alt=""></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <div id="slide">
+    <marquee behavior="scroll" direction="right">
+      <pre
+        id="pre">Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.     Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply. Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.              Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply. Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.    Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply. Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.</pre>
+    </marquee>
+  </div>
+
+  <!-- <div id="slide"> -->
+
+  </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div id="img2">
+        <div class="swiper-slide2"><img
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwe7d13dea/images/BRANDLD.jpg"
+            alt="" height="100px">
+        </div>
+      </div>
+      <div id="img2">
+        <div class="swiper-slide2"><img
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw6fafa6d3/images/BRANDRD.jpg"
+            alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+
+  <!-- Swiper JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+          
+              },
+            });
+            </script> -->
+  <!-- slider-3 -->
+  <div id="slide">
+    <marquee behavior="scroll" direction="right">
+      <pre
+        id="pre">Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.     Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply. Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.              Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply. Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.    Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply. Get 10% cashback on payment via Mobikwik wallet over Rs. 2999. T&C Apply.</pre>
+    </marquee>
+  </div>
+
+  <div id="section3">
+    <!-- Swiper -->
+    <div class="swiper3 mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img id="women"
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw65a148e8/images/homepage/All_Banners/womensday_newsletter.jpg"
+            alt=""></div>
+      </div>
+      <!--            
+            <div class="autoplay-progress">
+             
+              <span></span>
+            </div>
+          </div>
+       </div>  
+       
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+        </div>
+      </div> -->
+    </div>
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+    <!-- Initialize Swiper -->
+    <!-- <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script> -->
+    <!-- slider-4 -->
+
+    <div class="swiper mySwiper4">
+      <div id="name1">
+        <h2>THE BEST WAY TO BUY THE PRODUCTS YOU LOVE</h1>
+      </div>
+      <div id="name2">
+        <!-- <h3>Slide for More Options -----></h3>
+      </div>
+      <div id="name2">
+        <h1> </h1>
+      </div>
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwc8887c27/images/sale_.jpg"
+              alt=""></div>
+          <div id="name3">Sale</div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw0c68edb6/images/men_.jpg"
+              alt=""></div>
+          <div id="name3">Men</div>
+        </div>
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwb8df3006/images/women.jpg"
+              alt=""></div>
+          <div id="name3">Women</div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw43a80cbb/images/kids.jpg"
+              alt=""></div>
+          <div id="name3">Kids</div>
+        </div>
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw07037e98/images/couple.jpg"
+              alt=""></div>
+          <div id="name3">Couple</div>
+        </div>
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw5188cbbe/images/luxe.jpg"
+              alt=""></div>
+          <div id="name3">Luxe</div>
+        </div>
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw73a3bc3e/images/clock.jpg"
+              alt=""></div>
+          <div id="name3">Clocks</div>
+        </div>
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwda0fdf72/images/smart-1.jpg"
+              alt=""></div>
+          <div id="name3">Smart</div>
+        </div>
+        <div class="swiper-slide">
+          <div id="circle"><img
+              src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwff30f749/images/ragaB.jpg"
+              alt=""></div>
+          <div id="name3">Raga</div>
+        </div>
+      </div>
+    </div>
+    <!-- GRID-BOX -->
+    <div id="text">
+      THE BEST WAY TO BUY THE PRODUCTS YOU LOVE
+    </div>
+    <div id="Parent">
+      <div id="left">
+        <img id="img"
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw1b22c6a6/images/MechanicalE.jpg"
+          alt="" height="480px" width="500px">
+
+        <div class="container">
+          <div class="item "><img
+              src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwe6a0cc47/images/Smart.jpg"
+              alt=""></div>
+          <div class="item "><img
+              src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwcbff2bdf/images/Quartz.jpg"
+              alt=""></div>
+          <div class="item "><img
+              src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw76e65172/images/Chronograph.jpg"
+              alt=""></div>
+          <div class="item "><img
+              src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw180665d0/images/Automatic.jpg"
+              alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div id="text">
+
+      <h1>RECOMMENDED FOR YOU</h1>
+    </div>
+    <!-- Box----Model -->
+    <div id="main">
+      <div id="box2">
+        <img id="B"
+          src="https://sylvi.in/cdn/shop/files/Sylvi_Watch_Collection_Imperial_Rose_goldImage_Homepage.webp?v=1704713279"
+          alt="" height="310px" width="301px">
+        <h2>
+          <p> Special Addtion</p>
+        </h2>
+      </div>
+      <div id="box2">
+        <img id="B"
+          src="https://watchrapport.com/cdn/shop/products/7947068e73fddab1ee3dbc26f3130a74_800x.jpg?v=1682335391" alt=""
+          height="310px" width="287px">
+        <h2>
+          <p> Special Addtion</p>
+        </h2>
+      </div>
+      <div id="box2">
+        <img id="B"
+          src="https://media.karousell.com/media/photos/products/2023/2/18/preowned_grand_seiko_sport_col_1676732504_4cbe749f_progressive"
+          alt="" height="310px" width="291px">
+        <h2>
+          <p> Special Addtion</p>
+        </h2>
+      </div>
+      <div id="box2">
+        <img id="B" src="https://bold-time.com/wp-content/uploads/2022/06/pocket-watch-royce-blue-1.png" alt=""
+          height="310px" width="301px">
+        <h2>
+          <p> Special Addtion</p>
+        </h2>
+      </div>
+    </div>
+    <div id="main">
+      <div id="box2">
+        <img id="B"
+          src="https://sylvi.in/cdn/shop/files/Sylvi_Watch_Collection_Imperial_Rose_goldImage_Homepage.webp?v=1704713279"
+          alt="" height="310px" width="301px">
+        <h2>
+          <p> Special Addtion</p>
+        </h2>
+      </div>
+      <div id="box2">
+        <img id="B"
+          src="https://watchrapport.com/cdn/shop/products/7947068e73fddab1ee3dbc26f3130a74_800x.jpg?v=1682335391" alt=""
+          height="310px" width="287px">
+        <h2>
+          <p> Special Addtion</p>
+        </h2>
+      </div>
+      <div id="box2">
+        <img id="B"
+          src="https://media.karousell.com/media/photos/products/2023/2/18/preowned_grand_seiko_sport_col_1676732504_4cbe749f_progressive"
+          alt="" height="310px" width="291px">
+        <h2>
+          <p> Special Addtion</p>
+        </h2>
+      </div>
+      <div id="box2">
+        <img id="B" src="https://bold-time.com/wp-content/uploads/2022/06/pocket-watch-royce-blue-1.png" alt=""
+          height="310px" width="291px">
+        <h2>
+          <p> Special Addtion</p>
+        </h2>
+      </div>
+    </div>
+    <div id="text">
+      <h1>
+      STYLES-WATCH</h1>
+    </div>
+
+    <div class="swiper mySwiper5">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw2a0c2a5e/images/six.jpg"
+            alt="" height="200px" width="200px"></div>
+        <div class="swiper-slide"><img
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw19718747/images/four.jpg"
+            alt="" height="300px" width="300px"></div>
+        <div class="swiper-slide"><img
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwc85c50f3/images/one.jpg"
+            alt=""></div>
+        <div class="swiper-slide"><img
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw90447a48/images/five.jpg"
+            alt=""></div>
+        <div class="swiper-slide"><img
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw214b4890/images/two.jpg"
+            alt=""></div>
+        <div class="swiper-slide"><img
+            src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwc2126f46/images/three.jpg"
+            alt=""></div>
+
+      </div>
+      <br><br>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+
+ 
+    <div id="text">
+
+      <h1>  COLLECTION</h1>
+    </div>
+    <div class="container3">
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw4c3b0683/images/WorkwearWD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwc1b2e9d4/images/WorkwearNTD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw49fff0b0/images/RagaWD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw7d7f4af8/images/RagaNTD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwc0a72efd/images/GrandmasterNATD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwac86eb87/images/GrandWD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwe6235dc9/images/EdgeNATD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw9ecdb0c1/images/EdgeWD.jpg"
+          alt="" height="360px" width="300px"></div>
+
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwd2dde06c/images/NebulaWD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw475a8523/images/NebulaNTD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw32de8d0d/images/MaritimeWD.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwaf8b22ea/images/MaritimeNTD.jpg"
+          alt="" height="360px" width="300px"></div>
+    </div>
+    <!-- BOX-model-4 -->
+    <div id="text">
+      <h1>
+      SHOP BY BRANDS</h1>
+    </div>
+    
+    <div class="container4">
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwd005b872/images/TitanSBDesktop.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dweedae1b7/images/fastrackdesktop.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw72198a2d/images/sonatadesktop.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw34585a51/images/homepage/Police_desktop.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwcf32cbd5/images/tommydesktop.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw5d8cea36/images/homepage/KC_desktop.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw55073896/images/homepage/Anne-K_desktop.jpg"
+          alt="" height="360px" width="300px"></div>
+      <div class="item3"><img
+          src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw85b1e038/images/homepage/Coach_desktop.jpg"
+          alt="" height="360px" width="300px"></div>
+
+
+    </div>
+    <div id="text">
+      <h1>
+      TITAN E-GIFT CARD</h1>
+    </div>
+    <div id="footer">
+      <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwf90b31fa/images/EGift-Desktop.jpg" alt="">
+    </div>
+    
+</body>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper4", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+</html>
