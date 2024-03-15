@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        .container-fluid
+        {
+            background: #000;
+            height: 1000px;
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("");
+        }
+        .row
+        {
+            border-radius: 15px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP06Xcz13dndHnmpankbnjRcNKGXPojkwb7EYWFSsu5w&s");
+        }
+        #child
+        {
+            /* border-radius: 15px; 
+            background: #000000ab;
+            border-width: 15px;
+            border-style: solid;
+            background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3zYJL2ht6iWRSOTH4-Zi0pT2kUlUIRLB-03yV9y-zVw&s");
+            background-repeat: no-repeat;
+            background-size: cover; */
+            height: 100px;
+            width: 500px;
+            
+        }
+        
+    </style>
+    <!-- <div class="container-fluid ">
+        <div class="row  p-5 bg-dark">
+            <div class="col-lg-3 offset-1 col-md-6 col-sm-12 border border-primary3  " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+            <div class="col-lg-3 offset-1 col-md-6 col-sm-12 border border-success " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+            <div class="col-lg-3 offset-1 col-md-6 col-sm-12 border border-primary " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+            <div class="col-lg-3 mt-5 offset-1 col-md-6 col-sm-12 border border-success " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+            <div class="col-lg-3 mt-5 offset-1 col-md-6 col-sm-12 border border-success " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+            <div class="col-lg-3 mt-5 offset-1 col-md-6 col-sm-12 border border-success " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+            <div class="col-lg-3 mt-5 offset-1 col-md-6 col-sm-12 border border-success " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+            <div class="col-lg-3 mt-5 offset-1 col-md-6 col-sm-12 border border-success " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+            <div class="col-lg-3 mt-5 offset-1 col-md-6 col-sm-12 border border-success " id="child"><img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px"><div class="col "><button type="button" class="btn btn-primary mb-3  ">Book Now</button></div></div>
+        </div>
+    </div> -->
+    <div class="container-fluid">
+        <div class="row p-5 bg-dark">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Show three boxes on large screens, two on medium screens, and one on small screens -->
+                <div class="border border-primary rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Show three boxes on large screens, two on medium screens, and one on small screens -->
+                <div class="border border-primary rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Show three boxes on large screens, two on medium screens, and one on small screens -->
+                <div class="border border-primary rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Show three boxes on large screens, two on medium screens, and one on small screens -->
+                <div class="border border-primary rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Show three boxes on large screens, two on medium screens, and one on small screens -->
+                <div class="border border-primary rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Show three boxes on large screens, two on medium screens, and one on small screens -->
+                <div class="border border-primary rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Show three boxes on large screens, two on medium screens, and one on small screens -->
+                <div class="border border-primary rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="border border-success rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="border border-primary rounded p-3">
+                    <img src="https://pngimg.com/d/running_shoes_PNG5817.png" alt="" height="200px" width="200px">
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

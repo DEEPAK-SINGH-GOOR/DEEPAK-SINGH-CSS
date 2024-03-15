@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&W Mulitimedia. . . . .</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://media.licdn.com/dms/image/D4D03AQHsbzIenh8n9g/profile-displayphoto-shrink_800_800/0/1665563650452?e=2147483647&v=beta&t=L0Rfsx9GRfMJqIX5YUDz_Evt-oCLwExeugN5Zo2S9pk">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/jquery.dataTables.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.6/css/jquery.dataTables.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+ -->
+
+<!-- 
+    <script>
+        $(document).ready(function () {
+            $('#myTable').dataTable();
+        });
+    </script> -->
+</head>
+<style>
+    tr{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container class="mx-auto" style="width: 200px;"" >
+        <img src="data:image/png;base64,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" alt="">
+    </div>
+    <table class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th class="bg-primary">GRID</th>
+                <th class="bg-primary">Name</th>
+                <th class="bg-primary">Course</th>
+                <th class="bg-primary">Branch</th>
+                <th class="bg-primary">Age</th>
+                <th class="bg-primary">Addmision Date</th>
+                <th class="bg-primary">Fees</th>
+                <th class="bg-primary">Pay</th>
+                <th class="bg-primary">Placement</th>
+                <!-- <th class="bg-primary"></th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1111</td>
+                <td>DEEPAK</td>
+                <td>Full-Stack</td>
+                <td>R&W-5</td>
+                <td>18</td>
+                <td>2020-05-10</td>
+                <td>$1500</td>
+                <td>$1500</td>
+                <td class="bg-success">Done</td>
+            </tr>
+            <tr>
+                <td>4234</td>
+                <td>Deep</td>
+                <td>Full-Stack</td>
+                <td>R&W-5</td>
+                <td>18</td>
+                <td>2020-05-10</td>
+                <td>$1500</td>
+                <td>$1500</td>
+                <td class="bg-success">Done</td>
+            </tr><tr>
+                <td>6234</td>
+                <td>Jigar</td>
+                <td>Full-Stack</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1500</td>
+                <td>$1500</td>
+                <td class="bg-success">Done</td>
+            </tr>
+            <tr>
+                <td class="bg-danger">3453</td>
+                <td class="bg-danger">Sumit</td>
+                <td class="bg-danger">Data Science</td>
+                <td class="bg-danger">R&W-5</td>
+                <td class="bg-danger">17</td>
+                <td class="bg-danger">2019-11-05</td>
+                <td class="bg-danger">$00</td>
+                <td  class="bg-danger">$1500</td>
+                <td class="bg-danger">undone</td>
+            </tr>
+            <tr>
+                <td>8234</td>
+                <td>Aarav </td>
+                <td>Back-End</td>
+                <td>R&W-5</td>
+                <td>18</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1500</td>
+                <td class="bg-success">Done</td>
+            </tr>
+            <tr>
+                <td>7234</td>
+                <td>Rohan</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td class="bg-success">Done</td>
+             </tr>
+
+             <tr>
+                <td>5234</td>
+                <td>Mayank </td>
+                <td>Back-End</td>
+                <td>R&W-5</td>
+                <td>18</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td class="bg-success">Done</td>
+            </tr>
+             <tr>
+                <td>3234</td>
+                <td>Arjun</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td class="bg-success">Done</td>
+             </tr>
+             <tr>
+                <td class="bg-danger">3453</td>
+                <td class="bg-danger">vikram</td>
+                <td class="bg-danger">Data Science</td>
+                <td class="bg-danger">R&W-5</td>
+                <td class="bg-danger">17</td>
+                <td class="bg-danger">2019-11-05</td>
+                <td class="bg-danger">$1500</td>
+                <td class="bg-danger">$00</td>
+                <td class="bg-danger">undone</td>
+            </tr>
+             <tr>
+                <td>1134</td>
+                <td>Aisha</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td class="bg-success">Done</td>
+             </tr>
+             <tr>
+                <td>1334</td>
+                <td>Siddharth</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td class="bg-success">Done</td>
+             </tr>
+             <tr>
+                <td>8234</td>
+                <td>Aarav </td>
+                <td>Back-End</td>
+                <td>R&W-5</td>
+                <td>18</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td class="bg-success">Done</td>
+            </tr>
+            <tr>
+                <td>7234</td>
+                <td>Rohan</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$999</td>
+                <td class="bg-success">Done</td>
+             </tr>
+
+             <tr>
+                <td>5234</td>
+                <td>Mayank </td>
+                <td>Back-End</td>
+                <td>R&W-5</td>
+                <td>18</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td class="bg-success">Done</td>
+            </tr>
+             <tr>
+                <td>3234</td>
+                <td>Arjun</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td class="bg-success">Done</td>
+             </tr>
+             <tr>
+                <td class="bg-danger">3453</td>
+                <td class="bg-danger">Yash</td>
+                <td class="bg-danger">Data Science</td>
+                <td class="bg-danger">R&W-5</td>
+                <td class="bg-danger">17</td>
+                <td class="bg-danger">2019-11-05</td>
+                <td class="bg-danger">$1500</td>
+                <td class="bg-danger">$00</td>
+                <td class="bg-danger">undone</td>
+                
+            </tr>
+             <tr>
+                <td>1134</td>
+                <td>Aisha</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>-----</td>
+                <td class="bg-success">Done</td>
+             </tr>
+             <tr>
+                <td>1334</td>
+                <td>Siddharth</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>-----</td>
+                <td class="bg-success">Done</td>
+             </tr>
+             <tr>
+                <td class="bg-danger">3453</td>
+                <td class="bg-danger">Vikash</td>
+                <td class="bg-danger">Data Science</td>
+                <td class="bg-danger">R&W-5</td>
+                <td class="bg-danger">17</td>
+                <td class="bg-danger">2019-11-05</td>
+                <td class="bg-danger">$1500</td>
+                <td class="bg-danger">$00</td>
+                <td class="bg-danger">undone</td>
+            </tr>
+             <tr>
+                <td>1134</td>
+                <td>Aisha</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>-----</td>
+                <td class="bg-success">Done</td>
+             </tr>
+             <tr>
+                <td>1334</td>
+                <td>Siddharth</td>
+                <td>Front-End</td>
+                <td>R&W-5</td>
+                <td>19</td>
+                <td>2020-05-10</td>
+                <td>$1000</td>
+                <td>-----</td>
+                <td class="bg-success">Done</td>
+             </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
